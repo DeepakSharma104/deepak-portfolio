@@ -2,10 +2,12 @@ import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
+import { Education } from "@/components/Education";
 import { useRef } from "react";
 
 const Index = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
+  const educationRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
@@ -33,6 +35,14 @@ const Index = () => {
                 className="text-foreground hover:text-accent transition-colors"
               >
                 About
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => scrollToSection(educationRef)}
+                className="text-foreground hover:text-accent transition-colors"
+              >
+                Education
               </button>
             </li>
             <li>
@@ -77,6 +87,10 @@ const Index = () => {
               </p>
             </div>
           </section>
+        </div>
+
+        <div ref={educationRef} className="scroll-mt-20">
+          <Education />
         </div>
 
         <div ref={projectsRef} className="scroll-mt-20">
