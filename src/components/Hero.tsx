@@ -20,7 +20,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-accent via-primary to-background">
+    <section className="min-h-screen flex items-start pt-24 justify-center bg-gradient-to-b from-accent via-primary to-background">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export const Hero = () => {
           className="text-center"
         >
           <motion.div 
-            className="mb-8"
+            className="mb-4"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
