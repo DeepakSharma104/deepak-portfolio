@@ -20,13 +20,13 @@ const Index = () => {
 
   return (
     <main className="bg-background text-foreground">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-primary/20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-accent/95 backdrop-blur-sm border-b border-primary/20">
         <div className="container mx-auto px-4">
           <ul className="flex justify-center space-x-8 py-4">
             <li>
               <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 Home
               </button>
@@ -34,7 +34,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(aboutRef)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 About
               </button>
@@ -42,7 +42,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(educationRef)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 Education
               </button>
@@ -50,7 +50,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(projectsRef)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 Projects
               </button>
@@ -58,7 +58,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(skillsRef)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 Skills
               </button>
@@ -66,7 +66,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(certificatesRef)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 Certificates
               </button>
@@ -74,7 +74,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(contactRef)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-primary-foreground hover:text-secondary transition-colors"
               >
                 Contact
               </button>
