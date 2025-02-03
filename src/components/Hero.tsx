@@ -34,7 +34,7 @@ export const Hero = () => {
             transition={{ type: "spring", stiffness: 300 }}
           >
             <img
-              src="me.jpg" // Replace "your-image.jpg" with your actual image filename
+              src="src/me.jpg" // Replace "your-image.jpg" with your actual image filename
               alt="Aman sharam"
               className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto shadow-xl object-cover border-4 border-accent"
             />
