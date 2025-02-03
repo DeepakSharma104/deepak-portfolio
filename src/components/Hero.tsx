@@ -33,11 +33,12 @@ export const Hero = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-           <img
-  src="src/me.jpg" // Replace with the correct path or URL to your image
-  alt="deepak sharma",
-  className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto shadow-xl object-cover border-4 border-accent"
-/>          </motion.div>
+            <img
+              src="src/me.jpg"
+              alt="deepak sharma"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto shadow-xl object-cover border-4 border-accent"
+            />
+          </motion.div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
             <span ref={el}></span>
           </h1>
