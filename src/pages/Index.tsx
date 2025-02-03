@@ -3,6 +3,7 @@ import { Projects } from "@/components/Projects";
 import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
+import { Certificates } from "@/components/Certificates";
 import { useRef } from "react";
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
   const projectsRef = useRef<HTMLDivElement>(null);
   const skillsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const certificatesRef = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -18,13 +20,13 @@ const Index = () => {
 
   return (
     <main className="bg-background text-foreground">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-primary/20">
         <div className="container mx-auto px-4">
           <ul className="flex justify-center space-x-8 py-4">
             <li>
               <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="text-foreground hover:text-accent transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
               >
                 Home
               </button>
@@ -32,7 +34,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(aboutRef)}
-                className="text-foreground hover:text-accent transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
               >
                 About
               </button>
@@ -40,7 +42,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(educationRef)}
-                className="text-foreground hover:text-accent transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
               >
                 Education
               </button>
@@ -48,7 +50,7 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(projectsRef)}
-                className="text-foreground hover:text-accent transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
               >
                 Projects
               </button>
@@ -56,15 +58,23 @@ const Index = () => {
             <li>
               <button 
                 onClick={() => scrollToSection(skillsRef)}
-                className="text-foreground hover:text-accent transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
               >
                 Skills
               </button>
             </li>
             <li>
               <button 
+                onClick={() => scrollToSection(certificatesRef)}
+                className="text-foreground hover:text-primary transition-colors"
+              >
+                Certificates
+              </button>
+            </li>
+            <li>
+              <button 
                 onClick={() => scrollToSection(contactRef)}
-                className="text-foreground hover:text-accent transition-colors"
+                className="text-foreground hover:text-primary transition-colors"
               >
                 Contact
               </button>
@@ -77,10 +87,10 @@ const Index = () => {
         <Hero />
         
         <div ref={aboutRef} className="scroll-mt-20">
-          <section className="py-20 bg-primary/20">
+          <section className="py-20 bg-primary/10">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold mb-8">About Me</h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-foreground/80">
                 I'm Deepak Sharma, a Computer Science student passionate about creating innovative solutions through technology. 
                 In my free time, I enjoy calisthenics exercises and running, which help me stay strong mentally and physically. 
                 Feel free to reach out if you want to collaborate or just say hi!
@@ -99,6 +109,10 @@ const Index = () => {
 
         <div ref={skillsRef} className="scroll-mt-20">
           <Skills />
+        </div>
+
+        <div ref={certificatesRef} className="scroll-mt-20">
+          <Certificates />
         </div>
 
         <div ref={contactRef} className="scroll-mt-20">
