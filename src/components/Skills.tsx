@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-  { name: "HTML", level: 90 },
+  { name: "HTML", level: 80 },
   { name: "CSS", level: 85 },
   { name: "JavaScript", level: 80 },
   { name: "Python", level: 75 },
