@@ -37,7 +37,7 @@ export const Hero = () => {
   src="src/me.jpg" // Replace "your-image.jpg" with your actual image filename
   alt="Aman sharma"
   className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto shadow-xl object-cover border-4 border-accent"
-/
+/>
           </motion.div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
             <span ref={el}></span>
