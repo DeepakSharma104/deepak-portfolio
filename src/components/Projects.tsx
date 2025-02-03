@@ -20,7 +20,7 @@ const projects: Project[] = [
   {
     title: "Online Jewellery Shop",
     description: "A full-stack e-commerce platform for jewelry, featuring user authentication, product catalog, and secure checkout.",
-    image: "placeholder.svg",
+   video: "placeholder.mp4",
     link: "https://deepaura.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
   },
