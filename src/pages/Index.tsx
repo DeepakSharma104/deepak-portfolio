@@ -23,25 +23,23 @@ const Index = () => {
 
   return (
     <main className="bg-background text-foreground">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-accent/95 backdrop-blur-sm border-b border-primary/20">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-white shadow-sm">
         <div className="container mx-auto px-4">
           <div className="relative flex items-center justify-between py-4">
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-primary-foreground hover:text-secondary transition-colors font-bold text-xl"
+              className="text-primary hover:text-secondary transition-colors font-bold text-xl"
             >
               Deepak
             </button>
             
-            {/* Mobile menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-primary-foreground hover:text-secondary"
+              className="md:hidden text-primary hover:text-secondary"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
 
-            {/* Desktop menu */}
             <ul className="hidden md:flex space-x-8">
               <NavItem onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</NavItem>
               <NavItem onClick={() => scrollToSection(aboutRef)}>About</NavItem>
@@ -52,9 +50,8 @@ const Index = () => {
               <NavItem onClick={() => scrollToSection(contactRef)}>Contact</NavItem>
             </ul>
 
-            {/* Mobile menu */}
             {isMenuOpen && (
-              <div className="absolute top-full left-0 right-0 bg-accent/95 backdrop-blur-sm md:hidden">
+              <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm md:hidden border-t border-white/20">
                 <ul className="flex flex-col py-4">
                   <MobileNavItem onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</MobileNavItem>
                   <MobileNavItem onClick={() => scrollToSection(aboutRef)}>About</MobileNavItem>
@@ -74,7 +71,7 @@ const Index = () => {
         <Hero />
         
         <div ref={aboutRef} className="scroll-mt-20">
-          <section className="py-20 bg-primary/10">
+          <section className="py-20 bg-primary/5">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl font-bold mb-8 text-foreground">About Me</h2>
               <p className="text-lg text-foreground/80">
@@ -115,7 +112,7 @@ const NavItem = ({ children, onClick }: { children: React.ReactNode; onClick: ()
   <li>
     <button 
       onClick={onClick}
-      className="text-primary-foreground hover:text-secondary transition-colors"
+      className="text-primary hover:text-secondary transition-colors"
     >
       {children}
     </button>
@@ -126,7 +123,7 @@ const MobileNavItem = ({ children, onClick }: { children: React.ReactNode; onCli
   <li>
     <button 
       onClick={onClick}
-      className="w-full text-left px-4 py-2 text-primary-foreground hover:bg-primary/10 transition-colors"
+      className="w-full text-left px-4 py-2 text-primary hover:bg-primary/5 transition-colors"
     >
       {children}
     </button>
