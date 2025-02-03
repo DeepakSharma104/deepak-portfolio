@@ -12,7 +12,7 @@ export const Certificates = () => {
       title: "Python Programming",
       issuer: "Coursera",
       date: "2023",
-      image: "certificates/python-cert.jpg"
+      image: "src/1705756696599.jpeg"
     },
     {
       title: "JavaScript Algorithms",
