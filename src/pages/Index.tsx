@@ -4,6 +4,7 @@ import { Skills } from "@/components/Skills";
 import { Contact } from "@/components/Contact";
 import { Education } from "@/components/Education";
 import { Certificates } from "@/components/Certificates";
+import { About } from "@/components/About";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -60,6 +61,12 @@ const Index = () => {
 
       <div className="pt-16">
         <Hero />
+        <div id="about" className="scroll-mt-20">
+          <About />
+        </div>
+        <div id="education" className="scroll-mt-20">
+          <Education />
+        </div>
         <div id="projects" className="scroll-mt-20">
           <Projects />
         </div>
