@@ -6,7 +6,8 @@ const skills = [
   { name: "JavaScript", level: 80 },
   { name: "Python", level: 75 },
   { name: "SQL", level: 70 },
-  { name: "Git", level: 65 }
+  { name: "Git", level: 65 },
+  {name: "Ms office ",level:30}
 ];
 
 export const Skills = () => {
