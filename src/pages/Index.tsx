@@ -39,7 +39,6 @@ const Index = () => {
 
             <ul className="hidden md:flex space-x-8">
               <NavItem onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</NavItem>
-              <NavItem onClick={() => scrollToSection('projects')}>Projects</NavItem>
               <NavItem onClick={() => scrollToSection('skills')}>Skills</NavItem>
               <NavItem onClick={() => scrollToSection('certificates')}>Certificates</NavItem>
               <NavItem onClick={() => scrollToSection('contact')}>Contact</NavItem>
@@ -49,7 +48,6 @@ const Index = () => {
               <div className="absolute top-full left-0 right-0 bg-white/95 backdrop-blur-sm md:hidden border-t border-primary/10">
                 <ul className="flex flex-col py-4">
                   <MobileNavItem onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</MobileNavItem>
-                  <MobileNavItem onClick={() => scrollToSection('projects')}>Projects</MobileNavItem>
                   <MobileNavItem onClick={() => scrollToSection('skills')}>Skills</MobileNavItem>
                   <MobileNavItem onClick={() => scrollToSection('certificates')}>Certificates</MobileNavItem>
                   <MobileNavItem onClick={() => scrollToSection('contact')}>Contact</MobileNavItem>
