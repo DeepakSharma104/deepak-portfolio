@@ -20,8 +20,8 @@ const Index = () => {
   };
 
   return (
-    <main className="bg-background text-foreground">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-primary/10 shadow-sm">
+    <main className="bg-[#F1F0FB] text-[#1A1F2C]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-primary/10 shadow-sm">
         <div className="container mx-auto px-4">
           <div className="relative flex items-center justify-between py-4">
             <button 
@@ -88,7 +88,7 @@ const NavItem = ({ children, onClick }: { children: React.ReactNode; onClick: ()
   <li>
     <button 
       onClick={onClick}
-      className="text-primary hover:text-secondary transition-colors"
+      className="text-primary hover:text-secondary transition-colors font-medium"
     >
       {children}
     </button>
@@ -99,7 +99,7 @@ const MobileNavItem = ({ children, onClick }: { children: React.ReactNode; onCli
   <li>
     <button 
       onClick={onClick}
-      className="w-full text-left px-4 py-2 text-primary hover:bg-primary/5 transition-colors"
+      className="w-full text-left px-4 py-2 text-primary hover:bg-primary/5 transition-colors font-medium"
     >
       {children}
     </button>

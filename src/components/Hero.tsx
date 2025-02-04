@@ -27,7 +27,7 @@ export const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-start pt-16 justify-center bg-gradient-to-b from-white via-primary/5 to-background">
+    <section className="min-h-screen flex items-start pt-24 justify-center bg-gradient-to-b from-[#F1F0FB] via-[#E5DEFF] to-[#D6BCFA]">
       <div className="container mx-auto px-4">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -36,52 +36,55 @@ export const Hero = () => {
           className="text-center"
         >
           <motion.div 
-            className="mb-8"
+            className="mb-12"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <img
-              src="me.jpg"
-              alt="deepak sharma"
-              className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto shadow-xl object-cover border-4 border-primary/20"
-            />
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl"></div>
+              <img
+                src="me.jpg"
+                alt="deepak sharma"
+                className="relative w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/50"
+              />
+            </div>
           </motion.div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#6E59A5] to-[#9b87f5]">
             <span ref={el}></span>
           </h1>
-          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto px-4 mb-16 leading-relaxed">
+          <p className="text-xl md:text-2xl text-[#1A1F2C]/80 max-w-2xl mx-auto px-4 mb-16 leading-relaxed">
             A passionate Computer Science student and calisthenics enthusiast
           </p>
-          <div className="flex justify-center gap-12 mt-8">
+          <div className="flex flex-wrap justify-center gap-8 mt-8">
             <motion.button
               whileHover={{ y: -5 }}
               className="text-center group"
               onClick={() => scrollToSection('about')}
             >
-              <div className="bg-primary/10 p-5 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
-                <User className="w-7 h-7 text-primary" />
+              <div className="bg-white/80 p-6 rounded-2xl mb-3 group-hover:bg-primary/10 transition-colors shadow-lg backdrop-blur-sm">
+                <User className="w-8 h-8 text-primary" />
               </div>
-              <span className="text-sm font-medium text-foreground">About Me</span>
+              <span className="text-sm font-medium text-[#1A1F2C]">About Me</span>
             </motion.button>
             <motion.button
               whileHover={{ y: -5 }}
               className="text-center group"
               onClick={() => scrollToSection('education')}
             >
-              <div className="bg-primary/10 p-5 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
-                <GraduationCap className="w-7 h-7 text-primary" />
+              <div className="bg-white/80 p-6 rounded-2xl mb-3 group-hover:bg-primary/10 transition-colors shadow-lg backdrop-blur-sm">
+                <GraduationCap className="w-8 h-8 text-primary" />
               </div>
-              <span className="text-sm font-medium text-foreground">Education</span>
+              <span className="text-sm font-medium text-[#1A1F2C]">Education</span>
             </motion.button>
             <motion.button
               whileHover={{ y: -5 }}
               className="text-center group"
               onClick={() => scrollToSection('projects')}
             >
-              <div className="bg-primary/10 p-5 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
-                <Briefcase className="w-7 h-7 text-primary" />
+              <div className="bg-white/80 p-6 rounded-2xl mb-3 group-hover:bg-primary/10 transition-colors shadow-lg backdrop-blur-sm">
+                <Briefcase className="w-8 h-8 text-primary" />
               </div>
-              <span className="text-sm font-medium text-foreground">Projects</span>
+              <span className="text-sm font-medium text-[#1A1F2C]">Projects</span>
             </motion.button>
           </div>
         </motion.div>
