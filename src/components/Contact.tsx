@@ -59,7 +59,7 @@ export const Contact = () => {
               whileHover={{ scale: 1.05 }}
               className="inline-block"
             >
-              <Button className="gap-2" as="a" href="src/DEEPAK SHARMA.pdf" download>
+    <Button className="gap-2" as="a" href="/src/DEEPAK SHARMA.pdf" download>
   <Download className="w-4 h-4" />
   Download CV
 </Button>
