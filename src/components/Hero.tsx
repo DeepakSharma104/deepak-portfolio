@@ -43,7 +43,7 @@ export const Hero = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl"></div>
               <img
-                src="src/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg"
+                src="src/me.jpg"
                 alt="deepak sharma"
                 className="relative w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/50"
               />
