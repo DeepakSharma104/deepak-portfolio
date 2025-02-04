@@ -4,7 +4,7 @@ import { ExternalLink, Github } from 'lucide-react';
 interface Project {
   title: string;
   description: string;
-  video: string; // Changed from image to video
+  video: string;
   link: string;
   technologies: string[];
 }
@@ -13,21 +13,21 @@ const projects: Project[] = [
   {
     title: "Scientific Calculator",
     description: "A scientific calculator built with modern web technologies, featuring a clean interface and comprehensive mathematical functions.",
-    video: "certificates/Screenshot 2024-11-22 182325.mp4", // Updated to video file
+    video: "certificates/Screenshot 2024-11-22 182325.mp4",
     link: "https://deepaksharma104.github.io/scientific-calculator/",
     technologies: ["HTML", "CSS", "JavaScript"]
   },
   {
     title: "Online Jewellery Shop",
     description: "A full-stack e-commerce platform for jewelry, featuring user authentication, product catalog, and secure checkout.",
-    video: "src/jew.mp4", // Updated to video file
+    video: "src/jew.mp4",
     link: "https://deepaura.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
   },
   {
     title: "DeepTech Institution",
     description: "An educational platform providing online courses and resources for students, with user management and content delivery system.",
-    video: "src/Screen Recording 2025-01-08 222039.mp4", // Updated to video file
+    video: "src/Screen Recording 2025-01-08 222039.mp4",
     link: "https://deeptech12.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "SQL"]
   }
@@ -62,9 +62,8 @@ export const Projects = () => {
               <div className="relative h-48 overflow-hidden">
                 <video
                   src={project.video}
-                  alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                  controls // Add controls to the video
+                  controls
                 />
               </div>
               <div className="p-6">
