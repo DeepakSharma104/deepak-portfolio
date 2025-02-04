@@ -2,17 +2,17 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-gradient-to-b from-background to-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">About Me</h2>
+        <h2 className="text-4xl font-bold mb-16 text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">About Me</h2>
         <div className="max-w-3xl mx-auto">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="bg-background/50 backdrop-blur-sm p-6 rounded-lg shadow-lg border"
+            className="bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-primary/10"
           >
-            <p className="text-foreground/80 leading-relaxed">
+            <p className="text-lg text-foreground/80 leading-relaxed">
               I am a passionate Computer Science student with a deep interest in web development
               and software engineering. When I'm not coding, I enjoy practicing calisthenics,
               which helps me maintain a balanced lifestyle and stay focused on my goals.

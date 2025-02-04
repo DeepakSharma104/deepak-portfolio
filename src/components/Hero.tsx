@@ -36,52 +36,52 @@ export const Hero = () => {
           className="text-center"
         >
           <motion.div 
-            className="mb-4"
+            className="mb-8"
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <img
               src="me.jpg"
               alt="deepak sharma"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto shadow-xl object-cover border-4 border-accent"
+              className="w-48 h-48 md:w-56 md:h-56 rounded-full mx-auto shadow-xl object-cover border-4 border-primary/20"
             />
           </motion.div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
             <span ref={el}></span>
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto px-4 mb-12">
+          <p className="text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto px-4 mb-16 leading-relaxed">
             A passionate Computer Science student and calisthenics enthusiast
           </p>
-          <div className="flex justify-center gap-8 mt-8">
+          <div className="flex justify-center gap-12 mt-8">
             <motion.button
               whileHover={{ y: -5 }}
-              className="text-center"
+              className="text-center group"
               onClick={() => scrollToSection('about')}
             >
-              <div className="bg-primary/10 p-4 rounded-full mb-2 hover:bg-primary/20 transition-colors">
-                <User className="w-6 h-6 text-primary" />
+              <div className="bg-primary/10 p-5 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
+                <User className="w-7 h-7 text-primary" />
               </div>
-              <span className="text-sm text-foreground">About Me</span>
+              <span className="text-sm font-medium text-foreground">About Me</span>
             </motion.button>
             <motion.button
               whileHover={{ y: -5 }}
-              className="text-center"
+              className="text-center group"
               onClick={() => scrollToSection('education')}
             >
-              <div className="bg-primary/10 p-4 rounded-full mb-2 hover:bg-primary/20 transition-colors">
-                <GraduationCap className="w-6 h-6 text-primary" />
+              <div className="bg-primary/10 p-5 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
+                <GraduationCap className="w-7 h-7 text-primary" />
               </div>
-              <span className="text-sm text-foreground">Education</span>
+              <span className="text-sm font-medium text-foreground">Education</span>
             </motion.button>
             <motion.button
               whileHover={{ y: -5 }}
-              className="text-center"
+              className="text-center group"
               onClick={() => scrollToSection('projects')}
             >
-              <div className="bg-primary/10 p-4 rounded-full mb-2 hover:bg-primary/20 transition-colors">
-                <Briefcase className="w-6 h-6 text-primary" />
+              <div className="bg-primary/10 p-5 rounded-full mb-3 group-hover:bg-primary/20 transition-colors">
+                <Briefcase className="w-7 h-7 text-primary" />
               </div>
-              <span className="text-sm text-foreground">Projects</span>
+              <span className="text-sm font-medium text-foreground">Projects</span>
             </motion.button>
           </div>
         </motion.div>
