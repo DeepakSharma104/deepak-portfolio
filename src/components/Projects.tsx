@@ -27,7 +27,7 @@ const projects: Project[] = [
   {
     title: "DeepTech Institution",
     description: "An educational platform providing online courses and resources for students, with user management and content delivery system.",
-    video: "/deeptech-demo.mp4",
+    video: "/src/Screen Recording 2025-01-08 222039.mp4",
     link: "https://deeptech12.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "SQL"]
   }
