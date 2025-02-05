@@ -51,8 +51,6 @@ export const Hero = () => {
   className="relative w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/50"
 />
 
-
-Make sure to replace `"description of the image"` with an appropriate alt text.
             </div>
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#6E59A5] to-[#9b87f5]">
