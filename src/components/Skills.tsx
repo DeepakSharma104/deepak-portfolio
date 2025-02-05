@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion';
 
 const skills = [
-  { name: "HTML", level: 80 },
-  { name: "CSS", level: 85 },
-  { name: "JavaScript", level: 80 },
-  { name: "Python", level: 75 },
-  { name: "SQL", level: 70 },
-  { name: "Git", level: 65 },
-  {name : "photo and video edidting ",level :70},
-  {name: "Ms office ",level:30}
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Python",
+  "SQL",
+  "Git",
+  "Photo and Video Editing",
+  "MS Office"
 ];
 
 export const Skills = () => {
@@ -16,27 +16,17 @@ export const Skills = () => {
     <section id="skills" className="py-20 bg-primary">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Skills</h2>
-        <div className="max-w-3xl mx-auto space-y-6">
+        <div className="max-w-3xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {skills.map((skill, index) => (
-            <div key={index} className="space-y-2">
-              <div className="flex justify-between">
-                <span className="font-medium">{skill.name}</span>
-                <span>{skill.level}%</span>
-              </div>
-              <motion.div
-                className="h-2 bg-secondary rounded-full"
-                initial={{ width: 0 }}
-                whileInView={{ width: "100%" }}
-                transition={{ duration: 1, delay: index * 0.1 }}
-              >
-                <motion.div
-                  className="h-full bg-accent rounded-full"
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1, delay: index * 0.1 }}
-                />
-              </motion.div>
-            </div>
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="bg-secondary p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+            >
+              <span className="font-medium text-accent-foreground">{skill}</span>
+            </motion.div>
           ))}
         </div>
       </div>

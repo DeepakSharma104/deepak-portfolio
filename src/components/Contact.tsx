@@ -40,8 +40,15 @@ export const Contact = () => {
                 <Phone className="w-6 h-6 text-accent-foreground" />
               </div>
               <div className="flex flex-col">
-                <span className="font-medium">Phone</span>
-                <span className="text-muted-foreground">+92 343 2527807</span>
+                <span className="font-medium">Phone/WhatsApp</span>
+                <a 
+                  href="https://wa.me/923432527807" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-accent transition-colors"
+                >
+                  +92 343 2527807
+                </a>
               </div>
             </div>
             
@@ -59,7 +66,7 @@ export const Contact = () => {
               whileHover={{ scale: 1.05 }}
               className="inline-block"
             >
-              <a href="/src/DEEPAK SHARMA.pdf" download>
+              <a href="/DEEPAK SHARMA.pdf" download>
                 <Button className="gap-2">
                   <Download className="w-4 h-4" />
                   Download CV
