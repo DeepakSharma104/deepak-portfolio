@@ -12,7 +12,7 @@ export const Certificates = () => {
       title: "Python Programming",
       issuer: "Google developer student clubes",
       date: "2023",
-      image: "/1705756696599.jpeg"
+      image: "/src/1705756696599.jpeg"
     },
     {
       title: "JavaScript Algorithms",
