@@ -42,11 +42,17 @@ export const Hero = () => {
           >
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl"></div>
-              <img
-                src="https://photos.fife.usercontent.google.com/pw/AP1GczNpctKnrRnCHSEJD9TuAFMkjF_RlAcT5cH3lsLnd0Um_WLtreKBuAl4=w330-h220-no?authuser=0"
-                alt="deepak sharma"
-                className="relative w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/50"
-              />
+            To correct the specified image tag in your `Hero.tsx` component, update the `src` attribute to include the correct path for the image. Here is the corrected code:
+
+
+<img
+  src="src/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg"
+  alt="description of the image"
+  className="relative w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/50"
+/>
+
+
+Make sure to replace `"description of the image"` with an appropriate alt text.
             </div>
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#6E59A5] to-[#9b87f5]">
