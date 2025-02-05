@@ -6,13 +6,13 @@ export const Certificates = () => {
       title: "Web Development Certification",
       issuer: "FreeCodeCamp",
       date: "2023",
-      image: "/certificates/web-dev-cert.jpg"
+      image: "/c"
     },
     {
       title: "Python Programming",
       issuer: "Google developer student clubes",
       date: "2023",
-      image: "/1705756696599.jpeg"
+      image: "src/1705756696599.jpeg"
     },
     {
       title: "JavaScript Algorithms",
