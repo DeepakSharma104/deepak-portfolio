@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { GraduationCap, Briefcase, User } from 'lucide-react';
 import image from '../assets/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg'; // Adjust the path as per your project structure
 
-export const Hero = () => {
+export const Hero = () => {  
   const el = useRef(null);
 
   useEffect(() => {
