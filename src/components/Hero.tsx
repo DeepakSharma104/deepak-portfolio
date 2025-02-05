@@ -2,13 +2,14 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
 import { GraduationCap, Briefcase, User } from 'lucide-react';
+import image from '../assets/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg'; // Adjust the path as per your project structure
 
 export const Hero = () => {
   const el = useRef(null);
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['Welcome', 'To My Portfolio', 'This is  Deepak Sharma'],
+      strings: ['Welcome', 'To My Portfolio', 'This is Deepak Sharma'],
       typeSpeed: 50,
       backSpeed: 50,
       loop: true
@@ -43,7 +44,7 @@ export const Hero = () => {
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl"></div>
               <img
-                src="/src/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg"
+                src={image}
                 alt="deepak sharma"
                 className="relative w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto shadow-2xl object-cover border-4 border-white/50"
               />
