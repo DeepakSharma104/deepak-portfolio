@@ -13,21 +13,21 @@ const projects: Project[] = [
   {
     title: "Scientific Calculator",
     description: "A scientific calculator built with modern web technologies, featuring a clean interface and comprehensive mathematical functions.",
-    video: "certificates/Screenshot 2024-11-22 182325.mp4",
+    video: "/certificates/Screenshot 2024-11-22 182325.mp4",
     link: "https://deepaksharma104.github.io/scientific-calculator/",
     technologies: ["HTML", "CSS", "JavaScript"]
   },
   {
     title: "Online Jewellery Shop",
     description: "A full-stack e-commerce platform for jewelry, featuring user authentication, product catalog, and secure checkout.",
-    video: "src/jew.mp4",
+    video: "/jew.mp4",
     link: "https://deepaura.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
   },
   {
     title: "DeepTech Institution",
     description: "An educational platform providing online courses and resources for students, with user management and content delivery system.",
-    video: "src/Screen Recording 2025-01-08 222039.mp4",
+    video: "/Screen Recording 2025-01-08 222039.mp4",
     link: "https://deeptech12.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "SQL"]
   }
