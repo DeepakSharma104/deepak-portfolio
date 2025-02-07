@@ -43,7 +43,7 @@ export const Hero = () => {
           >
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl"></div>
-              <img src="/src/assets/profile.jpg" alt="me" className="w-48 h-48 rounded-full object-cover relative z-10" />
+              <img src="src/assets/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg" />
             </div>
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#6E59A5] to-[#9b87f5]">
