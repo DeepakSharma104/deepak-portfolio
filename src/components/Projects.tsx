@@ -1,3 +1,4 @@
+
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -13,21 +14,21 @@ const projects: Project[] = [
   {
     title: "Scientific Calculator",
     description: "A scientific calculator built with modern web technologies, featuring a clean interface and comprehensive mathematical functions.",
-    video: "/assets/calculator-demo.mp4",
+    video: "/src/assets/calculator-demo.mp4",
     link: "https://deepaksharma104.github.io/scientific-calculator/",
     technologies: ["HTML", "CSS", "JavaScript"]
   },
   {
     title: "Online Jewellery Shop",
     description: "A full-stack e-commerce platform for jewelry, featuring user authentication, product catalog, and secure checkout.",
-    video: "/assets/jew.mp4",
+    video: "/src/assets/jew.mp4",
     link: "https://deepaura.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
   },
   {
     title: "DeepTech Institution",
     description: "An educational platform providing online courses and resources for students, with user management and content delivery system.",
-    video: "/assets/deeptech-demo.mp4",
+    video: "/src/assets/deeptech-demo.mp4",
     link: "https://deeptech12.infinityfreeapp.com",
     technologies: ["HTML", "CSS", "JavaScript", "PHP", "SQL"]
   }

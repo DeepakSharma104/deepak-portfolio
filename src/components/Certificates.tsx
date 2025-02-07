@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 
 export const Certificates = () => {
@@ -6,19 +7,19 @@ export const Certificates = () => {
       title: "Web Development Certification",
       issuer: "FreeCodeCamp",
       date: "2023",
-      image: "src/1705756696599.jpeg"
+      image: "/src/assets/cert1.jpeg"
     },
     {
       title: "Python Programming",
-      issuer: "src/1705756696599.jpeg",
+      issuer: "Coursera",
       date: "2023",
-      image: "/assets/python-cert.jpeg"
+      image: "/src/assets/cert2.jpeg"
     },
     {
       title: "JavaScript Algorithms",
       issuer: "HackerRank",
       date: "2023",
-      image: "/assets/js-cert.jpg"
+      image: "/src/assets/cert3.jpg"
     }
   ];
 
