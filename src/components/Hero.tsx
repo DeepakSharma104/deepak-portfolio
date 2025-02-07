@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import { motion } from 'framer-motion';
 import { GraduationCap, Briefcase, User } from 'lucide-react';
-import image from '../assets/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg'; // Adjust the path as per your project structure
 
 export const Hero = () => {  
   const el = useRef(null);
@@ -43,7 +42,7 @@ export const Hero = () => {
           >
             <div className="relative inline-block">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full blur-xl"></div>
-              <img src="src/WhatsApp Image 2024-10-07 at 16.04.18_efee4f18.jpg" alt="me" />
+              <img src="/assets/profile.jpg" alt="me" className="w-48 h-48 rounded-full object-cover relative z-10" />
             </div>
           </motion.div>
           <h1 className="text-5xl md:text-7xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-[#6E59A5] to-[#9b87f5]">
